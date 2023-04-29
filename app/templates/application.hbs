@@ -1,3 +1,9 @@
 <h2 id="title">Galilee Art</h2>
 
+{{#each this.airtableService.allFurniture as |furniture|}}
+  {{a-get furniture 'Name'}} <br>
+{{else}}
+  ...Loading
+{{/each}}
+
 {{outlet}}
