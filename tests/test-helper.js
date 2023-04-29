@@ -1,5 +1,5 @@
-import Application from 'galileetart/app';
-import config from 'galileetart/config/environment';
+import Application from 'galileeart/app';
+import config from 'galileeart/config/environment';
 import * as QUnit from 'qunit';
 import { setApplication } from '@ember/test-helpers';
 import { setup } from 'qunit-dom';

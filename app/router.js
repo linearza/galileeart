@@ -1,5 +1,5 @@
 import EmberRouter from '@ember/routing/router';
-import config from 'galileetart/config/environment';
+import config from 'galileeart/config/environment';
 
 export default class Router extends EmberRouter {
   location = config.locationType;

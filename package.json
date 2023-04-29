@@ -1,8 +1,8 @@
 {
-  "name": "galileetart",
+  "name": "galileeart",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for galileetart goes here",
+  "description": "Small description for galileeart goes here",
   "repository": "",
   "license": "MIT",
   "author": "",
@@ -74,5 +74,9 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "airtable": "^0.11.6",
+    "dotenv": "^16.0.3"
   }
 }
