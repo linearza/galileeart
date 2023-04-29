@@ -28,7 +28,7 @@ export default class AirtableService extends Service {
       })
       .eachPage(
         // page
-        ((records, fetchNextPage) => {
+        (records, fetchNextPage) => {
           // This function (`page`) will get called for each page of records.
           records.forEach((record) => {
             this.allFurniture = [...this.allFurniture, record];
@@ -38,14 +38,14 @@ export default class AirtableService extends Service {
           // If there are more records, `page` will get called again.
           // If there are no more records, `done` will get called.
           fetchNextPage();
-        }),
+        },
         // done
-        ((err) => {
+        (err) => {
           if (err) {
             console.error(err);
             return;
           }
-        })
+        }
       );
   }
 }
