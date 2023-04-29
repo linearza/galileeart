@@ -2,7 +2,7 @@
 
 {{#each this.airtableService.allFurniture as |furniture|}}
   {{#each (a-get furniture "Images") as |image|}}
-    <img src={{image.url}} width="300"/>
+    <img src={{image.url}} alt={{a-get furniture "Name"}} width="300"/>
   {{/each}}
   <br />
   {{a-get furniture "Name"}}
