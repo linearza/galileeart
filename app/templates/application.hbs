@@ -1,9 +1,13 @@
 <h2 id="title">Galilee Art</h2>
 
 {{#each this.airtableService.allFurniture as |furniture|}}
-  {{a-get furniture 'Name'}} <br>
+  {{#each (a-get furniture "Images") as |image|}}
+    <img src={{image.url}} width="300"/>
+  {{/each}}
+  <br />
+  {{a-get furniture "Name"}}
+  <br />
+  <hr />
 {{else}}
   ...Loading
 {{/each}}
-
-{{outlet}}
