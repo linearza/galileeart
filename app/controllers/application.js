@@ -1,6 +1,3 @@
 import Controller from '@ember/controller';
-import { service } from '@ember/service';
 
-export default class ApplicationController extends Controller {
-  @service('airtable') airtableService;
-}
+export default class ApplicationController extends Controller {}
