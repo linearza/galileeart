@@ -1,11 +1,11 @@
 <h2 id="title">Galilee Art</h2>
 
-{{#each this.airtableService.allFurniture as |furniture|}}
-  {{#each (a-get furniture "Images") as |image|}}
-    <img src={{image.url}} alt={{a-get furniture "Name"}} width="300"/>
+{{#each this.airtableService.allArt as |art|}}
+  {{#each (a-get art "Images") as |image|}}
+    <img src={{image.url}} alt={{a-get art "Name"}} width="300"/>
   {{/each}}
   <br />
-  {{a-get furniture "Name"}}
+  {{a-get art "Name"}}
   <br />
   <hr />
 {{else}}
