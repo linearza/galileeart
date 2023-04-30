@@ -3,13 +3,7 @@
 </h1>
 
 {{#each this.airtableService.allArt as |art|}}
-  {{#each (a-get art "Images") as |image|}}
-    <img src={{image.url}} alt={{a-get art "Name"}} width="300"/>
-  {{/each}}
-  <br />
-  {{a-get art "Name"}}
-  <br />
-  <hr />
+  <ArtListing @art={{art}} />
 {{else}}
   ...Loading
 {{/each}}
