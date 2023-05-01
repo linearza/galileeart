@@ -2,8 +2,9 @@
   <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
     <div class="flex h-16 items-center justify-between">
       <div class="md:flex md:items-center md:gap-12">
-        <a class="block text-teal-600" href="/">
-          <span class="sr-only">Home</span>
+
+        <LinkTo @route="index" class="block text-teal-600">
+         <span class="sr-only">Home</span>
           <svg
             class="h-8"
             viewBox="0 0 28 24"
@@ -15,55 +16,22 @@
               fill="currentColor"
             />
           </svg>
-        </a>
+        </LinkTo>
       </div>
 
       <div class="hidden md:block">
         <nav aria-label="Site Nav">
           <ul class="flex items-center gap-6 text-sm">
             <li>
-              <a
-                class="text-gray-500 transition hover:text-gray-500/75"
-                href="/"
-              >
-                About
-              </a>
+              <LinkTo @route="about-us" class="text-gray-500 transition hover:text-gray-500/75">
+                About us
+              </LinkTo>
             </li>
 
             <li>
-              <a
-                class="text-gray-500 transition hover:text-gray-500/75"
-                href="/"
-              >
-                Careers
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="text-gray-500 transition hover:text-gray-500/75"
-                href="/"
-              >
-                History
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="text-gray-500 transition hover:text-gray-500/75"
-                href="/"
-              >
-                Services
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="text-gray-500 transition hover:text-gray-500/75"
-                href="/"
-              >
-                Projects
-              </a>
+              <LinkTo @route="contact-us" class="text-gray-500 transition hover:text-gray-500/75">
+                Contact us
+              </LinkTo>
             </li>
 
             <li>
